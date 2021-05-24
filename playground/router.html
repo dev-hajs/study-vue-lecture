@@ -8,6 +8,10 @@
 </head>
 <body>
     <div id="app">
+        <div>
+            <router-link to="/login">Login</router-link>
+            <router-link to="/main">Main</router-link>
+        </div>
         <router-view></router-view>
     </div>
 
@@ -26,6 +30,7 @@
                 // 로그인 페이지 정보
                 {
                     path: '/login',
+                    // name: login,
                     component: LoginComponent
                 },
                 // 메인 페이지 정보
